@@ -1,4 +1,5 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap');
 
  *{
 
@@ -10,11 +11,15 @@
 html, body{
     margin: 0px;
     padding: 0px;
-    background-color: bisque; 
+}
+body{
+    background-color: rgba(250, 235, 215, .5); 
+    background-image: url(/imgs/bg.JPG);
 }
 
 .nav ul{
     margin: 0;
+    padding: 0;
 }
 
 nav li{
@@ -36,7 +41,7 @@ nav a{
 }
 
 .main-nav {
-    text-align: left;
+    text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -45,9 +50,9 @@ nav a{
 /*margin between border and outside element; 
 space between border and content padding */
 .main_header{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0, 7);
     background-image: url("imgs/bg.JPG");w
-    background-blend-mode: multiply;
+    background-blend-mode: overlay;
     background-size: cover;
     padding-bottom: 2em;
 /* make it stay put*/
@@ -65,13 +70,15 @@ space between border and content padding */
     text-align: center;   
     margin: 0 auto;
 }
+
+/* the part where you manipulate an <img> on the BG*/
 .Bg{
     /*make it behind*/
-    z-index: -auto;
+    z-index: -1;
     position: absolute;
     margin: 0 auto;
     /*maket transparent*/
-    opacity: 25%;
+    opacity: 50%;
     background-blend-mode: overlay;
 
     max-width: 100%;
@@ -80,12 +87,30 @@ space between border and content padding */
 
 }
 
+/*content*/
 .me {
     padding: 50px;
+    color: bisque;
     text-align: center;
-}
+    font-family: 'Open Sans', sans-serif;
 
+}
+.pfp{
+    display: block;
+    margin: auto;
+    size: 100 0;
+    z-index: 2;
+
+}
+.h2_about {
+    font-size: 100px;
+    color:black;
+    margin: 0;
+    padding-top: .4em;
+    padding-left: 2%;
+}
 .container .about{
     margin: 0 auto;
+    padding: 0 auto;
     max-width: 1000px;
 }
