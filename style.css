@@ -68,7 +68,7 @@ space between border and content padding */
 .Bg{
     /*make it behind*/
     z-index: -auto;
-    position: relative;
+    position: absolute;
     margin: 0 auto;
     /*maket transparent*/
     opacity: 25%;
