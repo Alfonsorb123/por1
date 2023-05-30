@@ -1,0 +1,91 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+ *{
+
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    color: #777;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: bisque; 
+}
+
+.nav ul{
+    margin: 0;
+}
+
+nav li{
+    display: inline;
+    padding: .5em;
+    
+}
+
+nav a{
+    display: inline-block;
+    max-width: 1000;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255,255,255,.5);
+}
+
+.main-nav {
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+/*margin between border and outside element; 
+space between border and content padding */
+.main_header{
+    background-color: rgba(0,0,0,0.5);
+    background-image: url("imgs/bg.JPG");w
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 2em;
+/* make it stay put*/
+    top: 0px;
+    position: sticky;
+    padding: 0px 0 1em;
+    font-size: 16px;
+    z-index: 2;
+
+}
+
+
+.My_name h1, .My_name h4{
+    color: antiquewhite;
+    text-align: center;   
+    margin: 0 auto;
+}
+.Bg{
+    /*make it behind*/
+    z-index: -auto;
+    position: relative;
+    margin: 0 auto;
+    /*maket transparent*/
+    opacity: 25%;
+    background-blend-mode: overlay;
+
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+
+}
+
+.me {
+    padding: 50px;
+    text-align: center;
+}
+
+.container .about{
+    margin: 0 auto;
+    max-width: 1000px;
+}
