@@ -14,7 +14,7 @@ html, body{
 }
 body{
     background-color: rgba(250, 235, 215, .5); 
-    background-image: url(/imgs/bg.JPG);
+    background-image: url("/imgs/bg.JPG");
 }
 
 .nav ul{
