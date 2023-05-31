@@ -5,7 +5,7 @@
 
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
-    color: #777;
+    color: black;
 }
 
 html, body{
@@ -17,18 +17,22 @@ body{
     background-image: url("/imgs/bg.JPG");
 }
 
-.nav ul{
+p, span, div, .h2_frmt{
+    color: blanchedalmond;
+}
+
+.nav ul, footer li{
     margin: 0;
     padding: 0;
 }
 
-nav li{
+.nav li, footer li{
     display: inline;
     padding: .5em;
     
 }
 
-nav a{
+nav a, footer li{
     display: inline-block;
     max-width: 1000;
     padding: .5em;
@@ -49,7 +53,7 @@ nav a{
 
 /*margin between border and outside element; 
 space between border and content padding */
-.main_header{
+.main_header {
     background-color: rgba(0,0,0, 7);
     background-image: url("imgs/bg.JPG");w
     background-blend-mode: overlay;
@@ -61,14 +65,15 @@ space between border and content padding */
     padding: 0px 0 1em;
     font-size: 16px;
     z-index: 2;
-
 }
 
 
-.My_name h1, .My_name h4{
+.branding h1, .branding p, .My_name h4, .My_name h1{
     color: antiquewhite;
-    text-align: center;   
     margin: 0 auto;
+}
+.My_name h4, .My_name h1{
+    text-align: center;   
 }
 
 /* the part where you manipulate an <img> on the BG*/
@@ -95,22 +100,45 @@ space between border and content padding */
     font-family: 'Open Sans', sans-serif;
 
 }
-.pfp{
+.pfp {
     display: block;
-    margin: auto;
-    size: 100 0;
-    z-index: 2;
+    margin: 0 auto;
+    height: auto;
+    max-width: 1000px;
+    border-radius: 20%;
+}
 
-}
-.h2_about {
-    font-size: 100px;
-    color:black;
-    margin: 0;
-    padding-top: .4em;
+.h2_frmt {
+    font-size: 75px;
+    margin: 0px;
     padding-left: 2%;
+    margin-top: 2%;
 }
-.container .about{
+.container, .about{
     margin: 0 auto;
     padding: 0 auto;
     max-width: 1000px;
+}
+
+
+/*Certifications*/
+button{
+    cursor: pointer;
+}
+
+
+/*footer*/
+.branding p{
+    font-size: 25px;
+    position:sticky;
+    margin: 1em;
+}
+
+.main-footer{
+    display: flex;
+}
+.main-footer ul{
+    flex-grow: 1;
+    text-align: end;
+    margin-right: 2%;
 }
