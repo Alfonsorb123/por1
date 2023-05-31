@@ -11,13 +11,14 @@
 html, body{
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 body{
     background-color: rgba(250, 235, 215, .5); 
     background-image: url("/imgs/bg.JPG");
 }
 
-p, span, div, .h2_frmt{
+p, span, div, .h2_frmt, .branding h3{
     color: blanchedalmond;
 }
 
@@ -54,8 +55,7 @@ nav a, footer li{
 /*margin between border and outside element; 
 space between border and content padding */
 .main_header {
-    background-color: rgba(0,0,0, 7);
-    background-image: url("imgs/bg.JPG");w
+    background-image: url("imgs/bg.JPG");
     background-blend-mode: overlay;
     background-size: cover;
     padding-bottom: 2em;
@@ -128,17 +128,45 @@ button{
 
 
 /*footer*/
-.branding p{
-    font-size: 25px;
-    position:sticky;
-    margin: 1em;
+.palutang{
+    position: sticky;
+    bottom: 0px;
+    z-index: 1;
 }
 
-.main-footer{
-    display: flex;
+.main-footer-container{
+    display:flex;
 }
+
+.containerv2{
+    margin-left: 2%;
+    margin-right: auto;
+    max-width: 100%;
+    margin-bottom: 1%;
+}
+
+.putanginamogumanakanaplease{
+    margin-left:auto;
+    margin-right:2%;
+    max-width: 100%;
+    margin-bottom: 1%;
+}
+
+.branding h3{
+    font-size: 40px;
+    position:sticky;
+    margin: 0px;
+}
+
+
 .main-footer ul{
     flex-grow: 1;
     text-align: end;
-    margin-right: 2%;
+    margin:0px;
+}
+
+div .img-frmt img{
+    padding: 10px auto;
+    margin: 10px auto;
+    border-radius: 50%;
 }
