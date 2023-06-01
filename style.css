@@ -123,9 +123,45 @@ space between border and content padding */
 
 /*Certifications*/
 button{
-    cursor: pointer;
+   /* cursor: pointer;
+    background-color: rgba(255,255,255,.1);
+    border-color: transparent;
+    color:bisque;
+    border-radius: 10%;*/
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
 }
 
+button:hover{
+    background-color: rgba(255,255,255,.5);
+}
+
+.img-frmt img{
+    padding: 10px .4em 10px .4em;
+    margin: 0px;
+    border-radius: 20%;
+    height: 200px;
+}
+
+.cert-row {
+    border-bottom: 1px solid white;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.cert-row:last-child{
+    border-bottom: none;
+}
+
+.cert-item{
+    padding-right: .5em ;
+    color: bisque;
+    -webkit-text-stroke: 1px rgba(255,255,255,.1);
+    font-weight: bold;
+}
 
 /*footer*/
 .palutang{
@@ -158,15 +194,8 @@ button{
     margin: 0px;
 }
 
-
 .main-footer ul{
     flex-grow: 1;
     text-align: end;
     margin:0px;
-}
-
-div .img-frmt img{
-    padding: 10px auto;
-    margin: 10px auto;
-    border-radius: 50%;
 }
