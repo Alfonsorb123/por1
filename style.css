@@ -18,7 +18,7 @@ body{
     background-image: url("imgs/bg.JPG");
 }
 
-p, span, div, .h2_frmt, .branding h3{
+p, span, div, .h2_frmt, .branding h3,figcaption{
     color: blanchedalmond;
 }
 
@@ -92,7 +92,7 @@ space between border and content padding */
 
 }
 
-/*content*/
+/*About*/
 .me {
     padding: 50px;
     color: bisque;
@@ -104,7 +104,7 @@ space between border and content padding */
     display: block;
     margin: 0 auto;
     height: auto;
-    max-width: 1000px;
+    max-width: 400px;
     border-radius: 20%;
 }
 
@@ -114,22 +114,21 @@ space between border and content padding */
     padding-left: 2%;
     margin-top: 2%;
 }
-.container, .about{
+.container{
     margin: 0 auto;
     padding: 0 auto;
-    max-width: 1000px;
+    max-width: 1250px;
 }
 
 
 /*Certifications*/
+.cert-row:last-child{
+    border-bottom: none;
+}
 button{
-   /* cursor: pointer;
-    background-color: rgba(255,255,255,.1);
-    border-color: transparent;
-    color:bisque;
-    border-radius: 10%;*/
     background-color: Transparent;
     background-repeat:no-repeat;
+    border-radius: 10%;
     border: none;
     cursor:pointer;
     overflow: hidden; 
@@ -142,9 +141,16 @@ button:hover{
 .img-frmt img{
     padding: 10px .4em 10px .4em;
     margin: 0px;
-    border-radius: 20%;
+    border-radius: 50%;
     height: 200px;
+    display:inline-block;
 }
+
+
+.caption_cert figcaption{
+    display: inline-block;
+}
+
 
 .cert-row {
     border-bottom: 1px solid white;
@@ -152,15 +158,26 @@ button:hover{
     margin-bottom: 1em;
 }
 
-.cert-row:last-child{
-    border-bottom: none;
-}
+
 
 .cert-item{
-    padding-right: .5em ;
-    color: bisque;
-    -webkit-text-stroke: 1px rgba(255,255,255,.1);
+    display: inline-block;
+    padding-right: .5em;
+    padding-left: 1em;
+}
+
+.cert-type{
     font-weight: bold;
+    font-size: 30px;
+    color: bisque;
+    width: 40%;
+}
+.cert-dur{
+    width: 30%;
+}
+
+.cert-exp{
+    width: 29%;
 }
 
 /*footer*/
