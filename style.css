@@ -16,6 +16,7 @@ html, body{
 body{
     background-color: rgba(250, 235, 215, .5); 
     background-image: url("imgs/bg.JPG");
+
 }
 
 p, span, div, .h2_frmt, .branding h3,figcaption{
@@ -50,6 +51,7 @@ nav a, footer li{
     font-size: 1.1em;
     font-weight: lighter;
     border-bottom: 1px solid rgba(255,255,255,.3);
+    width: 100%;
 }
 
 /*margin between border and outside element; 
@@ -59,6 +61,7 @@ space between border and content padding */
     background-blend-mode: overlay;
     background-size: cover;
     padding-bottom: 2em;
+    width: 100%;
 /* make it stay put*/
     top: 0px;
     position: sticky;
@@ -146,19 +149,21 @@ button:hover{
     display:inline-block;
 }
 
+.img-frmt-exp img{
+    padding: 0;
+    margin: 0;
+    height: 200px;
+}
 
-.caption_cert figcaption{
+.caption_cert figcaption, {
     display: inline-block;
 }
 
-
 .cert-row {
     border-bottom: 1px solid white;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    margin: 1em 0 1em 0;
+    padding: 1em 0 1em 0;
 }
-
-
 
 .cert-item{
     display: inline-block;
@@ -166,6 +171,19 @@ button:hover{
     padding-left: 1em;
 }
 
+figure {
+    display: inline-block;
+    width: 100%;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    text-align: center;
+}
+
+/*certificate header-rows*/
 .cert-type{
     font-weight: bold;
     font-size: 30px;
@@ -180,13 +198,27 @@ button:hover{
     width: 29%;
 }
 
-/*footer*/
-.palutang{
-    position: sticky;
-    bottom: 0px;
-    z-index: 1;
+.cert-display {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.display-div{
+    list-style-type: none;
+    width: 33.33%;
+    padding: 2em 7em 2em 7em;
+    margin: 0;
+  
+}
+.cert-par{
+    padding: 3em 12em 7em 0;
+    margin-right: 0;
+    text-align: justify;
 }
 
+
+
+/*footer*/
 .main-footer-container{
     display:flex;
 }
