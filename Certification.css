@@ -212,6 +212,15 @@ figure figcaption {
     margin:0px;
 }
 
+footer{
+    position: sticky;
+    bottom: 0px;
+}
+
+footer p{
+    margin-bottom: 3%;
+}
+
 footer li:hover{
     border-radius: 50%;
 }
