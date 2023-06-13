@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap');
 
- *{
 
+ *{
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
-    color: black;
+    color: blanchedalmond;
 }
 
 html, body{
-    margin: 0px;
-    padding: 0px;
-    scroll-behavior: smooth;
+    margin: 0 auto;
+    padding: 0 auto;
+    max-width: 100%;
 }
 body{
     background-color: rgba(250, 235, 215, .5); 
@@ -19,34 +19,46 @@ body{
 
 }
 
-p, span, div, .h2_frmt, .branding h3,figcaption{
-    color: blanchedalmond;
-}
-
-.nav ul, footer li{
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: auto;
+} 
+footer li{
     margin: 0;
     padding: 0;
 }
 
-.nav li, footer li{
+.nav li{
+    margin: 0px;
+    list-style: none;
+}
+footer li{
     display: inline;
     padding: .5em;
     
 }
 
-nav a, footer li{
+.nav a, footer li{
     display: inline-block;
-    max-width: 1000;
+    max-width: 100%;
     padding: .5em;
     color: white;
     text-decoration: none;
 }
 
-.nav a:hover {
+.nav a:hover, footer li:hover{
     background-color: rgba(255,255,255,.5);
+    cursor:pointer;
+}
+footer li:hover{
+    border-radius: 50%;
 }
 
-.main-nav {
+.main-nav { /*border*/
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
@@ -60,23 +72,29 @@ space between border and content padding */
     background-image: url("imgs/bg.JPG");
     background-blend-mode: overlay;
     background-size: cover;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     width: 100%;
-/* make it stay put*/
-    top: 0px;
-    position: sticky;
-    padding: 0px 0 1em;
-    font-size: 16px;
-    z-index: 2;
 }
 
-
-.branding h1, .branding p, .My_name h4, .My_name h1{
+.My_name h4, .My_name h1{
     color: antiquewhite;
-    margin: 0 auto;
+    margin: 1px auto;
+    font-weight: bold;
+}
+.My_name h1{
+    font-size: large;
+    font-weight: 100px;
 }
 .My_name h4, .My_name h1{
     text-align: center;   
+    
+}
+
+.h2_frmt {
+    font-size: 75px;
+    margin: 0px;
+    padding-left: 2%;
+    margin-top: 2%;
 }
 
 /* the part where you manipulate an <img> on the BG*/
@@ -89,15 +107,16 @@ space between border and content padding */
     opacity: 50%;
     background-blend-mode: overlay;
 
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
+    height: fit-content;
     align-items: center;
 
 }
 
 /*About*/
 .me {
-    padding: 50px;
+    padding: 25px 50px;
     color: bisque;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -111,113 +130,6 @@ space between border and content padding */
     border-radius: 20%;
 }
 
-.h2_frmt {
-    font-size: 75px;
-    margin: 0px;
-    padding-left: 2%;
-    margin-top: 2%;
-}
-.container{
-    margin: 0 auto;
-    padding: 0 auto;
-    max-width: 1250px;
-}
-
-
-/*Certifications*/
-.cert-row:last-child{
-    border-bottom: none;
-}
-button{
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border-radius: 10%;
-    border: none;
-    cursor:pointer;
-    overflow: hidden; 
-}
-
-button:hover{
-    background-color: rgba(255,255,255,.5);
-}
-
-.img-frmt img{
-    padding: 10px .4em 10px .4em;
-    margin: 0px;
-    border-radius: 50%;
-    height: 200px;
-    display:inline-block;
-}
-
-.img-frmt-exp img{
-    padding: 0;
-    margin: 0;
-    height: 200px;
-}
-
-.caption_cert figcaption, {
-    display: inline-block;
-}
-
-.cert-row {
-    border-bottom: 1px solid white;
-    margin: 1em 0 1em 0;
-    padding: 1em 0 1em 0;
-}
-
-.cert-item{
-    display: inline-block;
-    padding-right: .5em;
-    padding-left: 1em;
-}
-
-figure {
-    display: inline-block;
-    width: 100%;
-    margin: 20px; /* adjust as needed */
-}
-figure img {
-    vertical-align: top;
-}
-figure figcaption {
-    text-align: center;
-}
-
-/*certificate header-rows*/
-.cert-type{
-    font-weight: bold;
-    font-size: 30px;
-    color: bisque;
-    width: 40%;
-}
-.cert-dur{
-    width: 30%;
-}
-
-.cert-exp{
-    width: 29%;
-}
-
-.cert-display {
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-}
-.display-div{
-    list-style-type: none;
-    width: 33.33%;
-    padding: 2em 7em 2em 7em;
-    margin: 0;
-  
-}
-.cert-par{
-    padding: 3em 12em 7em 0;
-    margin-right: 0;
-    text-align: justify;
-}
-
-
-
 /*footer*/
 .main-footer-container{
     display:flex;
@@ -230,12 +142,6 @@ figure figcaption {
     margin-bottom: 1%;
 }
 
-.putanginamogumanakanaplease{
-    margin-left:auto;
-    margin-right:2%;
-    max-width: 100%;
-    margin-bottom: 1%;
-}
 
 .branding h3{
     font-size: 40px;

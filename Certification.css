@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap');
+
+
+ *{
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    color: blanchedalmond;
+}
+
+html, body{
+    margin: 0 auto;
+    padding: 0 auto;
+    max-width: 100%;
+}
+body{
+    background-color: rgba(250, 235, 215, .5); 
+    background-image: url("imgs/bg.JPG");
+
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: auto;
+} 
+footer li{
+    margin: 0;
+    padding: 0;
+}
+
+.nav li{
+    margin: 0px;
+    list-style: none;
+}
+footer li{
+    display: inline;
+    padding: .5em;
+    
+}
+
+.nav a, footer li{
+    display: inline-block;
+    max-width: 100%;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover, footer li:hover{
+    background-color: rgba(255,255,255,.5);
+    cursor:pointer;
+}
+footer li:hover{
+    border-radius: 50%;
+}
+
+.main-nav { /*border*/
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    width: 100%;
+}
+
+/*margin between border and outside element; 
+space between border and content padding */
+.main_header {
+    background-image: url("imgs/bg.JPG");
+    background-blend-mode: overlay;
+    background-size: cover;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.Bg{
+    /*make it behind*/
+    z-index: -1;
+    position: absolute;
+    margin: 0 auto;
+    /*maket transparent*/
+    opacity: 50%;
+    background-blend-mode: overlay;
+
+    height: auto;
+    max-width: 100%;
+    height: fit-content;
+    align-items: center;
+
+}
+
+
+/*end header*/
+.My_name h4, .My_name h1{
+    color: antiquewhite;
+    margin: 1px auto;
+    font-weight: bold;
+}
+.My_name h1{
+    font-size: large;
+    font-weight: 100px;
+}
+.My_name h4, .My_name h1{
+    text-align: center;   
+    
+}
+.h2_frmt {
+    font-size: 75px;
+    margin: 0px;
+    padding-left: 2%;
+}
+
+.img-frmt img{
+    margin: 0px;
+    height: auto;
+    width: 100%;
+    display:inline-block;
+}
+
+.img-frmt-exp img{
+    padding: 0;
+    margin: 0;
+    height: 200px;
+}
+
+.caption_cert figcaption, {
+    display: inline-block;
+}
+
+.cert-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid white;
+    padding: 1em 0 1em 0;
+}
+.cert-row:last-child{
+    border-bottom: 1px none;
+}
+
+.cert-type, .cert-dur, .cert-exp{
+    align-self: center;
+    padding-right: .5em;
+    padding-left: 1em;
+}
+
+figure {
+    display: inline-block;
+    width: 100%;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    text-align: center;
+}
+
+/*certificate header-rows*/
+.cert-type{
+    font-weight: bold;
+    font-size: 30px;
+    color: bisque;
+}
+
+.cert-display {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.display-div{
+    list-style-type: none;
+    width: 33.33%;
+    padding: 2em 7em 2em 7em;
+    margin: 0;
+  
+}
+.cert-par{
+    padding: 3em 7em 7em 0;
+    margin-right: 0;
+    text-align: justify;
+}
+
+
+/*footer*/
+.main-footer-container{
+    display:flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerv2{
+    margin-left: 2%;
+    margin-right: auto;
+    max-width: 100%;
+    margin-bottom: 1%;
+}
+
+.putanginamogumanakanaplease{
+    margin-left: 1000px;
+    margin-right:2%;
+    max-width: 100%;
+    margin-bottom: 1%;
+}
+
+.branding h3{
+    font-size: 40px;
+    position:sticky;
+    margin: 0px;
+}
+
+.main-footer ul{
+    flex-grow: 1;
+    text-align: end;
+    margin:0px;
+}
