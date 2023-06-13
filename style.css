@@ -11,7 +11,7 @@
 html, body{
     margin: 0 auto;
     padding: 0 auto;
-    max-width: 100%;
+    max-width: 100%;a
 }
 body{
     background-color: rgba(250, 235, 215, .5); 
@@ -133,13 +133,13 @@ space between border and content padding */
 /*footer*/
 .main-footer-container{
     display:flex;
+    ;
 }
 
 .containerv2{
     margin-left: 2%;
     margin-right: auto;
     max-width: 100%;
-    margin-bottom: 1%;
 }
 
 
@@ -153,4 +153,10 @@ space between border and content padding */
     flex-grow: 1;
     text-align: end;
     margin:0px;
+}
+
+.containerv3 p{
+    margin-top: 10px;
+    text-align: center;
+    overflow-x: hidden;
 }

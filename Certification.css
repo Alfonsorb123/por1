@@ -39,7 +39,6 @@ footer li{
 footer li{
     display: inline;
     padding: .5em;
-    
 }
 
 .nav a, footer li{
@@ -53,9 +52,6 @@ footer li{
 .nav a:hover, footer li:hover{
     background-color: rgba(255,255,255,.5);
     cursor:pointer;
-}
-footer li:hover{
-    border-radius: 50%;
 }
 
 .main-nav { /*border*/
@@ -113,17 +109,10 @@ space between border and content padding */
     padding-left: 2%;
 }
 
-.img-frmt img{
+.img-frmt img, .img-frmt-exp img{
     margin: 0px;
     height: auto;
     width: 100%;
-    display:inline-block;
-}
-
-.img-frmt-exp img{
-    padding: 0;
-    margin: 0;
-    height: 200px;
 }
 
 .caption_cert figcaption, {
@@ -161,12 +150,6 @@ figure figcaption {
 }
 
 /*certificate header-rows*/
-.cert-type{
-    font-weight: bold;
-    font-size: 30px;
-    color: bisque;
-}
-
 .cert-display {
     display:flex;
     flex-direction: row;
@@ -176,22 +159,29 @@ figure figcaption {
     list-style-type: none;
     width: 33.33%;
     padding: 2em 7em 2em 7em;
-    margin: 0;
-  
+    margin: 0; 
+}
+.cert-type{
+    font-weight: bold;
+    font-size: 30px;
+    color: bisque;
 }
 .cert-par{
-    padding: 3em 7em 7em 0;
-    margin-right: 0;
+    padding-left: 0em;
     text-align: justify;
 }
 
 
-/*footer*/
-.main-footer-container{
+.certification-content{
     display:flex;
+	justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
 }
-
+/* contains the content below cert. h2 */
 .container{
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -199,23 +189,20 @@ figure figcaption {
     justify-content: center;
 }
 
-.containerv2{
+/*footer*/
+.main-footer-container{
+    display:flex;
+}
+
+.foot-contain{
     margin-left: 2%;
     margin-right: auto;
     max-width: 100%;
     margin-bottom: 1%;
 }
-
-.putanginamogumanakanaplease{
-    margin-left: 1000px;
-    margin-right:2%;
-    max-width: 100%;
-    margin-bottom: 1%;
-}
-
 .branding h3{
     font-size: 40px;
-    position:sticky;
+    position:relative;
     margin: 0px;
 }
 
@@ -223,4 +210,8 @@ figure figcaption {
     flex-grow: 1;
     text-align: end;
     margin:0px;
+}
+
+footer li:hover{
+    border-radius: 50%;
 }
