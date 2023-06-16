@@ -65,7 +65,7 @@ footer li{
 /*margin between border and outside element; 
 space between border and content padding */
 .main_header {
-    background-image: url("imgs/bg.JPG");
+    background-image: url("imgs/webp/");
     background-blend-mode: overlay;
     background-size: cover;
     padding-bottom: 1em;
@@ -77,21 +77,20 @@ space between border and content padding */
 
 .Bg{
     /*make it behind*/
+    background-image: url("imgs/bg.png");
     z-index: -1;
     position: absolute;
     margin: 0 auto;
+    
     /*maket transparent*/
     opacity: 50%;
     background-blend-mode: overlay;
-
+    background-size: cover;
     height: auto;
     max-width: 100%;
-    height: fit-content;
-    align-items: center;
-
+    left: 0;
+    top: 0;
 }
-
-
 /*end header*/
 .My_name h4, .My_name h1{
     color: antiquewhite;
@@ -192,6 +191,13 @@ figure figcaption {
     justify-content: center;
 }
 
+
+.kwasong img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 /*footer*/
 .main-footer-container{
     display:flex;

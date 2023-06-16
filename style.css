@@ -130,14 +130,6 @@ space between border and content padding */
     border-radius: 20%;
 }
 
-/* projects */
-
-.kwasong img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 
 /*footer*/
 .main-footer-container{
