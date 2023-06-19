@@ -65,7 +65,7 @@ footer li{
 /*margin between border and outside element; 
 space between border and content padding */
 .main_header {
-    background-image: url("imgs/webp/");
+    background-image: url("imgs/bg.JPG");
     background-blend-mode: overlay;
     background-size: cover;
     padding-bottom: 1em;
